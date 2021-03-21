@@ -86,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
                             JSONObject response = new JSONObject(myResponse);
 
                             //handling if response is fail
-                            Log.d("myapp",response.toString());
                             if(!response.getBoolean("status")){
                                 throw new Exception(response.getString("msg"));
                             }
@@ -95,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
                             //
                             MainActivity.this.runOnUiThread(new Runnable() {
                                 public void run() {
-                                    Log.d("UI thread", "I am the UI thread");
                                     try {
                                         Toast.makeText(MainActivity.this,  response.getString("msg"), Toast.LENGTH_SHORT).show();
                                         //redirecting to welcome page

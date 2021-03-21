@@ -12,8 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Chatapp">
+<<<<<<< HEAD
 
         <activity android:name=".welcome"></activity>
+=======
+        <activity android:name=".msgwindow"></activity>
+        <activity android:name=".welcome" />
+>>>>>>> 4993ddd59d7a6fa7687db298c584a060d5ee622d
         <activity android:name=".SignupActivity" />
         <activity
             android:name=".MainActivity"
